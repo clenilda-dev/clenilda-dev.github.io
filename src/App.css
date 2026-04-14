@@ -1,0 +1,159 @@
+:root {
+    --primary: #e75480;
+    --secondary: #fbcfe8;
+    --bg: #fff5f9;
+    --text: #4a044e;
+    --card: #ffffff;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+/* HEADER */
+header {
+    background: var(--card);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+#btn-tema {
+    padding: 6px 12px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SEÇÕES */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* SOBRE */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /*  enquadramento perfeito */
+    margin: 15px 0;
+    border: 4px solid var(--secondary);
+}
+
+/* PROJETOS */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-projeto {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-projeto h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* FORM */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    color: var(--text);
+}
+
+button {
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: white;
+}
+
+/* 🌙 TEMA ESCURO */
+body.dark-theme {
+    --bg: #1e1b2e;
+    --text: #f1f5f9;
+    --card: #2d1b3d;
+    --primary: #f472b6;
+}
+
+/* inputs no escuro */
+body.dark-theme input,
+body.dark-theme textarea {
+    background: #3b2a4a;
+    color: white;
+}
